@@ -1,0 +1,38 @@
+
+# /* -------- 💫 https://www.youtube.com/@Ruben-Linux 💫 -------- */
+# /* ............ Scale of variet colors for waybar.......... */
+# /* ----------- 👍 designed by: Ruben_&_Linux:~  👍 ------- */
+
+@define-color background-darker rgba(30, 31, 41, 230);
+@define-color background #282a36;
+@define-color selection #44475a;
+@define-color foreground #f8f8f2;
+@define-color comment #6272a4;
+@define-color cyan #8be9fd;
+@define-color green #50fa7b;
+@define-color orange #ffb86c;
+@define-color pink #ff79c6;
+@define-color purple #bd93f9;
+@define-color red #ff5555;
+@define-color yellow #f1fa8c;
+
+@define-color foreground #FAF0E8;
+@define-color background rgba(33,32,34,0.25);
+@define-color cursor #FAF0E8;
+
+@define-color color0 #474649;
+@define-color color1 #1A171F;
+@define-color color2 #143551;
+@define-color color3 #99352B;
+@define-color color4 #2B5C98;
+@define-color color5 #0DB0B6;
+@define-color color6 #B4A08E;
+@define-color color7 #EFE2D6;
+@define-color color8 #A79E95;
+@define-color color9 #231F29;
+@define-color color10 #1B466C;
+@define-color color11 #CC463A;
+@define-color color12 #3A7BCA;
+@define-color color13 #12EBF3;
+@define-color color14 #F0D5BD;
+@define-color color15 #EFE2D6;
