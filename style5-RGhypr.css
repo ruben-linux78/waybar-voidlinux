@@ -1,0 +1,188 @@
+
+/* ------- 💫 https://www.youtube.com/@Ruben-Linux 💫 ------- */
+/* .............. Style: Ruben Garuda Hyprland ........... */
+/* ----------- 👍 designed by: Ruben_&_Linux:~  👍 ------- */
+
+* {
+	font-family: JetBrainsMono Nerd Font;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 10px;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+}
+
+@keyframes blink_red {
+    to {
+        background-color: rgb(242, 143, 173);
+        color: rgb(26, 24, 38);
+    }
+}
+
+.warning, .critical, .urgent {
+	animation-name: blink_red;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+window#waybar {
+	background-color: transparent;
+}
+
+window#waybar.hidden {
+    opacity: 0.5;
+}
+
+window > box {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	background-color: transparent;
+	/*background-color: rgb(30, 30, 46);*/
+	/* border-style: solid; */
+	/* border-width: 2px; */
+	/* border-color: rgb(171, 233, 179); */
+}
+
+#workspaces button {
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+#workspaces button.focused {
+	background-color: rgb(181, 232, 224);
+	color: rgb(26, 24, 38);
+}
+
+#workspaces button.active {
+	background-color: rgb(181, 232, 224);
+	color: rgb(26, 24, 38);
+}
+
+#workspaces button.urgent {
+    /* background-color: rgb(242, 143, 173); */
+   	color: rgb(26, 24, 38);
+}
+
+#workspaces button:hover {
+    background-color: rgb(248, 189, 150);
+    color: rgb(26, 24, 38);
+}
+
+tooltip {
+  background: rgb(48, 45, 65);
+}
+
+tooltip label {
+  color: rgb(217, 224, 238);
+}
+
+#custom-launcher {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 22px;
+    color: rgb(166, 227, 161);
+}
+
+#mode, #clock, #tray, #memory, #cpu, #idle_inhibitor, #temperature, #backlight, #pulseaudio, #network, #battery #bluetooth #custom-weather {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#mode {
+	margin-left: 5px;
+	background-color: rgb(248, 189, 150);
+    color: rgb(26, 24, 38);
+}
+
+#memory {
+	padding-left: 5px;
+	color: rgb(245, 189, 230);
+}
+
+#cpu {
+	color: rgb(250, 179, 135);
+}
+
+#clock {
+	color: rgb(238, 212, 159);
+}
+
+#idle_inhibitor {
+	color: rgb(166, 227, 161);
+}
+
+#temperature {
+	color: rgb(150, 205, 251);
+}
+
+#custom-keyboard-layout{
+padding-left: 5px;
+padding-right: 5px;
+font-size: 18px;
+color: rgb(203, 166, 247);
+}
+
+#backlight {
+	color: rgb(248, 189, 150);
+}
+
+#pulseaudio {
+	color: rgb(245, 224, 220);
+}
+
+#network {
+	color: rgb(181, 232, 224);
+}
+
+#bluetooth {
+color: rgb(114, 135, 253);
+font-size: 18px;
+}
+
+#tray {
+font-size: 15px;
+}
+
+#custom-weather {
+color: rgb(166, 227, 161);
+}
+
+#battery.charging, #battery.full, #battery.discharging {
+	color: rgb(250, 227, 176);
+}
+
+#battery.critical:not(.charging) {
+	color: rgb(242, 143, 173);
+}
+
+#custom-playerctl {
+    padding: 0 5px;
+    margin: 0 2px;
+    background-color: rgb(181, 232, 224);
+    color: black;
+}
+
+#custom-playerctltest {
+    padding: 0 5px;
+    margin: 0 2px;
+    background-color: rgb(181, 232, 224);
+    color: black;
+}
+#custom-off {
+	color: rgb(242, 143, 173);
+	font-size: 18px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#custom-power {
+padding-left: 3px;
+padding-right: 5px;
+font-size: 19px;
+color: rgb(210, 15, 57);
+}
