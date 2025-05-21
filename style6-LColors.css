@@ -1,0 +1,178 @@
+
+/* ------- 💫 https://www.youtube.com/@Ruben-Linux 💫 ------- */
+/* .................... Style: line & Colors ............. */
+/* ----------- 👍 designed by: Ruben_&_Linux:~  👍 ------- */
+
+/*
+nord0  #2e3440
+nord1  #3b4252
+nord2  #434c5e
+nord3  #4c566a
+nord4  #d8dee9
+nord5  #e5e9f0
+nord6  #eceff4
+nord7  #8fbcbb
+nord8  #88c0d0
+nord9  #81a1c1
+nord10 #5e81ac
+nord11 #bf616a
+nord12 #d08770
+nord14 #a3be8c
+nord15 #b48ead
+nord13 #ebcb8b (amarillo)
+#7287fd        (lavanda)
+#8839ef        (morado)
+#c6a0f6        (muave)
+#8aadf4        (blue)
+#ea76cb        (pink)
+*/
+
+* {
+    color: #eceff4;
+    border: 0;
+    border-radius: 0;
+    padding: 0 0;
+    font-family:Symbols Nerd Font Mono;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-bottom:2px;
+   }
+
+window#waybar {
+    background:rgba (0, 0, 0, 0.65);
+    border-radius: 20px 20px 20px 20px;
+}
+
+#workspaces button {
+    padding: 2px 0px;
+    border-bottom: 2px;
+    color: #eceff4;
+    border-color: #d8dee9;
+    border-style: solid;
+    margin-top: 2px;
+}
+
+#workspaces button.active {
+    border-color: #81a1c1;
+}
+
+#clock, #battery, #cpu, #disk, #memory,#idle_inhibitor, #temperature,#bluetooth, #custom-keyboard-layout, #backlight, #network, #pulseaudio, #tray, #window,#custom-launcher, #custom-power, #custom-updates ,#custom-network_traffic,#custom-weather{
+    padding: 2px 3px;
+    border-bottom: 2px;
+    border-style: solid;
+}
+
+/* ------------------------------
+ * Module styles
+ * --------------------------- */
+
+
+#clock {
+    color:#a3be8c;
+}
+
+#custom-weather {
+    color: #ebcb8b;
+}
+
+#backlight {
+    color: #ebcb8b;
+}
+
+#battery {
+    color: #c6a0f6;
+}
+
+#battery.charging {
+    color: #81a1c1;
+}
+
+@keyframes blink {
+    to {
+        color: #c6a0f6;
+        background-color: #eceff4;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background: #bf616a;
+    color: #eceff4;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu {
+    color: #7287fd;
+}
+
+#memory {
+    color: #d3869b;
+}
+
+#disk {
+    color: #8aadf4;
+}
+
+#network.disabled {
+    color: #bf616a;
+}
+
+#network{
+    color: #8fbcbb;
+}
+
+#network.disconnected {
+    color: #bf616a;
+}
+
+#pulseaudio {
+    color: #b48ead;
+}
+
+#pulseaudio.muted {
+    color: #e20548;
+}
+
+#temperature {
+    color: #d08770;
+}
+
+#temperature.critical {
+    color: #bf616a;
+}
+
+#bluetooth {
+    color: #ea76cb;
+}
+
+#idle_inhibitor {
+   color: #8839ef;
+}
+
+#tray {
+}
+
+#custom-launcher {
+   font-size: 19px;
+   color: #8fbcbb;
+}
+
+#custom-power{
+   font-size: 17px;
+   color: #bf616a;
+}
+
+#window{
+   border-style: hidden;
+   margin-top:1px;
+}
+#custom-keyboard-layout{
+   color: #d08770;
+}
+#custom-network_traffic{
+   color: #8aadf4;
+}
